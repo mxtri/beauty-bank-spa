@@ -960,3 +960,72 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   top: 0;
 }
+
+
+
+
+/* Style Prestige pour le Catalogue */
+.catalogue-wrapper {
+  background: linear-gradient(to bottom, #fffcf7, #ffffff);
+  min-height: 100vh;
+  padding: 40px 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.catalogue-header h1 {
+  color: #8a6d1a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(166, 124, 0, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+  border-bottom: 1px solid #fdf5e6;
+}
+
+.service-name { 
+  flex: 1; 
+  color: #333; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.service-price { 
+  font-weight: 700; 
+  color: #a67c00; 
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Admin Styles */
+.admin-card {
+  background: #fff;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .catalogue-header h1 { font-size: 1.6rem; }
+  .service-item { flex-direction: column; gap: 5px; }
+  .service-price { margin-left: 0; color: #d4af37; }
+}

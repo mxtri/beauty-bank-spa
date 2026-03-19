@@ -9,6 +9,7 @@ import AdminLogin from "./pages/AdminLogin";
 import Admin from "./pages/Admin";
 import Catalogue from "./pages/catalogue";
 import Compta from "./pages/compta"
+import ChangeCatalogue from "./pages/changeCatalogue";
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,8 @@ const App: React.FC = () => {
         <Route path="*" element={<Navigate to="/" />} />
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/compta" element={<Compta />} />
+        <Route path="/change-catalogue" element={<ChangeCatalogue />} />
+        <Route path="/admin-vps-spa" element={<ChangeCatalogue />} />
       </Routes>
     </>
   );
