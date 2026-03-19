@@ -24,7 +24,7 @@ const Admin: React.FC = () => {
   // --- ÉTATS POUR LA SÉCURITÉ ---
   const [isAuth, setIsAuth] = useState(false);
   const [passInput, setPassInput] = useState("");
-  const SECRET_PASSWORD = "BOSSLADY225THBBS"; 
+  const SECRET_PASSWORD = "BOSSLADY225THBBS@"; 
 
   const loadData = async () => {
     let query = supabase.from("rendezvous").select("*");

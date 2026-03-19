@@ -25,7 +25,7 @@ const ChangeCatalogue: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [itemToDelete, setItemToDelete] = useState<string | null>(null);
 
-  const SECRET_PASSWORD = "Proprio225THBBS"; 
+  const SECRET_PASSWORD = "Proprio225THBBS@"; 
 
   useEffect(() => { if(isAuth) fetchList(); }, [isAuth]);
 
